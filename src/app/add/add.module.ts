@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -7,6 +8,12 @@ import { IonicModule } from '@ionic/angular';
 import { AddPageRoutingModule } from './add-routing.module';
 
 import { AddPage } from './add.page';
+
+@Component({
+  selector: 'app-add',
+  templateUrl: './add.page.html',
+  styleUrls: ['./add.page.scss'],
+})
 
 @NgModule({
   imports: [
@@ -17,4 +24,6 @@ import { AddPage } from './add.page';
   ],
   declarations: [AddPage]
 })
-export class AddPageModule {}
+export class AddPageModule {
+  
+}
